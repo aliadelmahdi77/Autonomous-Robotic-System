@@ -79,5 +79,5 @@ Autonomous robotic systems have applications in:
 
 ## Team Members
 
-This project is carried out by a team of 6 Electrical and Computer Engineering (ECE) students.
+This project is carried out by a team of 6 Elecronics and Communication Engineering (ECE) students.
 
