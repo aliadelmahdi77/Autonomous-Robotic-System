@@ -1,0 +1,1 @@
+# Store images, videos, or diagrams that might be included in the documentation or reports.

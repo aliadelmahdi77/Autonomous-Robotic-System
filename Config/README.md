@@ -1,0 +1,1 @@
+# For configuration files or environment setup scripts.
