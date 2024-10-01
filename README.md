@@ -5,8 +5,7 @@
 This project focuses on **Autonomous Robotics Systems** from both hardware and system modeling perspectives. Autonomous systems are rapidly advancing in the fields of artificial intelligence, machine learning, and hardware development. These systems can perform tasks without human intervention, making them essential in various industries.
 
 ### Current Project Status:
-Start Phase
-Expected completion date: 1st July 2025
+Start Phase, Expected completion date: 1st July 2025
 
 ## Project Scope and Introduction
 
