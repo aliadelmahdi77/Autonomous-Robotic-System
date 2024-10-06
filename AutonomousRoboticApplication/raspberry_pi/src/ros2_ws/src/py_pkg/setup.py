@@ -20,6 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            "py_LiDAR = py_pkg.LiDAR.py:main",
+            "py_station = py_pkg.station.py:main"
         ],
     },
 )
