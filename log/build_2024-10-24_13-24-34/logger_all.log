@@ -1,0 +1,508 @@
+[1.230s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.230s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x74d1d3d36fb0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x74d1d3d369e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x74d1d3d369e0>>, mixin_verb=('build',))
+[5.196s] ERROR:colcon.colcon_core.extension_point:Exception loading extension 'colcon_core.package_identification.python_setup_py': The 'typing-extensions>=3.6.4' distribution was not found and is required by importlib-metadata
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_core/extension_point.py", line 169, in load_extension_points
+    extension_type = load_extension_point(name, value, group)
+  File "/usr/lib/python3/dist-packages/colcon_core/extension_point.py", line 210, in load_extension_point
+    return EntryPoint(name, value, group).load()
+  File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 171, in load
+    module = import_module(match.group('module'))
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 9, in <module>
+    import setuptools
+  File "/home/aliadel/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 17, in <module>
+    import setuptools.version
+  File "/home/aliadel/.local/lib/python3.10/site-packages/setuptools/version.py", line 1, in <module>
+    import pkg_resources
+  File "/home/aliadel/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 3261, in <module>
+    def _initialize_master_working_set():
+  File "/home/aliadel/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 3244, in _call_aside
+    f(*args, **kwargs)
+  File "/home/aliadel/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 3273, in _initialize_master_working_set
+    working_set = WorkingSet._build_master()
+  File "/home/aliadel/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 583, in _build_master
+    ws.require(__requires__)
+  File "/home/aliadel/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 900, in require
+    needed = self.resolve(parse_requirements(requirements))
+  File "/home/aliadel/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 786, in resolve
+    raise DistributionNotFound(req, requirers)
+pkg_resources.DistributionNotFound: The 'typing-extensions>=3.6.4' distribution was not found and is required by importlib-metadata
+
+[5.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[5.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[5.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[5.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[5.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[5.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[5.221s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/aliadel/Documents/Autonomous-Robotic-System'
+[5.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[5.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[5.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[5.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[5.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[5.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[5.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[5.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[5.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[5.376s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[5.376s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[5.376s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[5.376s] Level 1:colcon.colcon_core.package_identification:_identify(Assets) by extensions ['ignore', 'ignore_ament_install']
+[5.377s] Level 1:colcon.colcon_core.package_identification:_identify(Assets) by extension 'ignore'
+[5.377s] Level 1:colcon.colcon_core.package_identification:_identify(Assets) by extension 'ignore_ament_install'
+[5.377s] Level 1:colcon.colcon_core.package_identification:_identify(Assets) by extensions ['colcon_pkg']
+[5.377s] Level 1:colcon.colcon_core.package_identification:_identify(Assets) by extension 'colcon_pkg'
+[5.377s] Level 1:colcon.colcon_core.package_identification:_identify(Assets) by extensions ['colcon_meta']
+[5.377s] Level 1:colcon.colcon_core.package_identification:_identify(Assets) by extension 'colcon_meta'
+[5.377s] Level 1:colcon.colcon_core.package_identification:_identify(Assets) by extensions ['ros']
+[5.377s] Level 1:colcon.colcon_core.package_identification:_identify(Assets) by extension 'ros'
+[5.377s] Level 1:colcon.colcon_core.package_identification:_identify(Assets) by extensions ['cmake', 'python']
+[5.377s] Level 1:colcon.colcon_core.package_identification:_identify(Assets) by extension 'cmake'
+[5.377s] Level 1:colcon.colcon_core.package_identification:_identify(Assets) by extension 'python'
+[5.377s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication) by extensions ['ignore', 'ignore_ament_install']
+[5.377s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication) by extension 'ignore'
+[5.377s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication) by extension 'ignore_ament_install'
+[5.378s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication) by extensions ['colcon_pkg']
+[5.378s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication) by extension 'colcon_pkg'
+[5.378s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication) by extensions ['colcon_meta']
+[5.378s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication) by extension 'colcon_meta'
+[5.378s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication) by extensions ['ros']
+[5.378s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication) by extension 'ros'
+[5.378s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication) by extensions ['cmake', 'python']
+[5.378s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication) by extension 'cmake'
+[5.378s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication) by extension 'python'
+[5.378s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common) by extensions ['ignore', 'ignore_ament_install']
+[5.378s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common) by extension 'ignore'
+[5.378s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common) by extension 'ignore_ament_install'
+[5.379s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common) by extensions ['colcon_pkg']
+[5.379s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common) by extension 'colcon_pkg'
+[5.379s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common) by extensions ['colcon_meta']
+[5.379s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common) by extension 'colcon_meta'
+[5.379s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common) by extensions ['ros']
+[5.379s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common) by extension 'ros'
+[5.379s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common) by extensions ['cmake', 'python']
+[5.379s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common) by extension 'cmake'
+[5.379s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common) by extension 'python'
+[5.379s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common/libraries) by extensions ['ignore', 'ignore_ament_install']
+[5.379s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common/libraries) by extension 'ignore'
+[5.379s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common/libraries) by extension 'ignore_ament_install'
+[5.380s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common/libraries) by extensions ['colcon_pkg']
+[5.380s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common/libraries) by extension 'colcon_pkg'
+[5.380s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common/libraries) by extensions ['colcon_meta']
+[5.380s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common/libraries) by extension 'colcon_meta'
+[5.380s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common/libraries) by extensions ['ros']
+[5.380s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common/libraries) by extension 'ros'
+[5.380s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common/libraries) by extensions ['cmake', 'python']
+[5.380s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common/libraries) by extension 'cmake'
+[5.380s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common/libraries) by extension 'python'
+[5.380s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common/utils) by extensions ['ignore', 'ignore_ament_install']
+[5.380s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common/utils) by extension 'ignore'
+[5.380s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common/utils) by extension 'ignore_ament_install'
+[5.380s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common/utils) by extensions ['colcon_pkg']
+[5.380s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common/utils) by extension 'colcon_pkg'
+[5.381s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common/utils) by extensions ['colcon_meta']
+[5.381s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common/utils) by extension 'colcon_meta'
+[5.381s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common/utils) by extensions ['ros']
+[5.381s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common/utils) by extension 'ros'
+[5.381s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common/utils) by extensions ['cmake', 'python']
+[5.381s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common/utils) by extension 'cmake'
+[5.381s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/common/utils) by extension 'python'
+[5.381s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson) by extensions ['ignore', 'ignore_ament_install']
+[5.381s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson) by extension 'ignore'
+[5.381s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson) by extension 'ignore_ament_install'
+[5.381s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson) by extensions ['colcon_pkg']
+[5.381s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson) by extension 'colcon_pkg'
+[5.381s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson) by extensions ['colcon_meta']
+[5.381s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson) by extension 'colcon_meta'
+[5.381s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson) by extensions ['ros']
+[5.382s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson) by extension 'ros'
+[5.382s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson) by extensions ['cmake', 'python']
+[5.382s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson) by extension 'cmake'
+[5.382s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson) by extension 'python'
+[5.382s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/docs) by extensions ['ignore', 'ignore_ament_install']
+[5.382s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/docs) by extension 'ignore'
+[5.382s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/docs) by extension 'ignore_ament_install'
+[5.382s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/docs) by extensions ['colcon_pkg']
+[5.382s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/docs) by extension 'colcon_pkg'
+[5.382s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/docs) by extensions ['colcon_meta']
+[5.382s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/docs) by extension 'colcon_meta'
+[5.382s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/docs) by extensions ['ros']
+[5.382s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/docs) by extension 'ros'
+[5.383s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/docs) by extensions ['cmake', 'python']
+[5.383s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/docs) by extension 'cmake'
+[5.383s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/docs) by extension 'python'
+[5.383s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws) by extensions ['ignore', 'ignore_ament_install']
+[5.383s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws) by extension 'ignore'
+[5.383s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws) by extension 'ignore_ament_install'
+[5.383s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws) by extensions ['colcon_pkg']
+[5.383s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws) by extension 'colcon_pkg'
+[5.383s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws) by extensions ['colcon_meta']
+[5.383s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws) by extension 'colcon_meta'
+[5.383s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws) by extensions ['ros']
+[5.383s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws) by extension 'ros'
+[5.384s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws) by extensions ['cmake', 'python']
+[5.384s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws) by extension 'cmake'
+[5.384s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws) by extension 'python'
+[5.384s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[5.384s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/build) by extension 'ignore'
+[5.384s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/build) ignored
+[5.384s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[5.384s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/install) by extension 'ignore'
+[5.385s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/install) ignored
+[5.385s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[5.385s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/log) by extension 'ignore'
+[5.385s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/log) ignored
+[5.385s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[5.385s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src) by extension 'ignore'
+[5.386s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src) by extension 'ignore_ament_install'
+[5.386s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src) by extensions ['colcon_pkg']
+[5.386s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src) by extension 'colcon_pkg'
+[5.386s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src) by extensions ['colcon_meta']
+[5.386s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src) by extension 'colcon_meta'
+[5.386s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src) by extensions ['ros']
+[5.386s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src) by extension 'ros'
+[5.386s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src) by extensions ['cmake', 'python']
+[5.386s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src) by extension 'cmake'
+[5.386s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src) by extension 'python'
+[5.387s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/build) by extensions ['ignore', 'ignore_ament_install']
+[5.387s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/build) by extension 'ignore'
+[5.387s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/build) ignored
+[5.387s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/cpp_pkg) by extensions ['ignore', 'ignore_ament_install']
+[5.387s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/cpp_pkg) by extension 'ignore'
+[5.387s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/cpp_pkg) by extension 'ignore_ament_install'
+[5.387s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/cpp_pkg) by extensions ['colcon_pkg']
+[5.387s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/cpp_pkg) by extension 'colcon_pkg'
+[5.387s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/cpp_pkg) by extensions ['colcon_meta']
+[5.387s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/cpp_pkg) by extension 'colcon_meta'
+[5.388s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/cpp_pkg) by extensions ['ros']
+[5.388s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/cpp_pkg) by extension 'ros'
+[5.461s] DEBUG:colcon.colcon_core.package_identification:Package 'AutonomousRoboticApplication/jetson/ros2_ws/src/cpp_pkg' with type 'ros.ament_cmake' and name 'cpp_pkg'
+[5.462s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/install) by extensions ['ignore', 'ignore_ament_install']
+[5.462s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/install) by extension 'ignore'
+[5.462s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/install) ignored
+[5.462s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/log) by extensions ['ignore', 'ignore_ament_install']
+[5.463s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/log) by extension 'ignore'
+[5.463s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/log) ignored
+[5.463s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/py_pkg) by extensions ['ignore', 'ignore_ament_install']
+[5.463s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/py_pkg) by extension 'ignore'
+[5.463s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/py_pkg) by extension 'ignore_ament_install'
+[5.463s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/py_pkg) by extensions ['colcon_pkg']
+[5.463s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/py_pkg) by extension 'colcon_pkg'
+[5.463s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/py_pkg) by extensions ['colcon_meta']
+[5.463s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/py_pkg) by extension 'colcon_meta'
+[5.463s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/py_pkg) by extensions ['ros']
+[5.463s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/ros2_ws/src/py_pkg) by extension 'ros'
+[5.464s] DEBUG:colcon.colcon_core.package_identification:Package 'AutonomousRoboticApplication/jetson/ros2_ws/src/py_pkg' with type 'ros.ament_python' and name 'py_pkg'
+[5.464s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/tests) by extensions ['ignore', 'ignore_ament_install']
+[5.465s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/tests) by extension 'ignore'
+[5.465s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/tests) by extension 'ignore_ament_install'
+[5.465s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/tests) by extensions ['colcon_pkg']
+[5.465s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/tests) by extension 'colcon_pkg'
+[5.465s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/tests) by extensions ['colcon_meta']
+[5.465s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/tests) by extension 'colcon_meta'
+[5.465s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/tests) by extensions ['ros']
+[5.465s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/tests) by extension 'ros'
+[5.465s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/tests) by extensions ['cmake', 'python']
+[5.465s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/tests) by extension 'cmake'
+[5.465s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/jetson/tests) by extension 'python'
+[5.465s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac) by extensions ['ignore', 'ignore_ament_install']
+[5.466s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac) by extension 'ignore'
+[5.466s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac) by extension 'ignore_ament_install'
+[5.466s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac) by extensions ['colcon_pkg']
+[5.466s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac) by extension 'colcon_pkg'
+[5.466s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac) by extensions ['colcon_meta']
+[5.466s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac) by extension 'colcon_meta'
+[5.466s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac) by extensions ['ros']
+[5.466s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac) by extension 'ros'
+[5.466s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac) by extensions ['cmake', 'python']
+[5.466s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac) by extension 'cmake'
+[5.466s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac) by extension 'python'
+[5.467s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/Makefile) by extensions ['ignore', 'ignore_ament_install']
+[5.467s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/Makefile) by extension 'ignore'
+[5.467s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/Makefile) by extension 'ignore_ament_install'
+[5.467s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/Makefile) by extensions ['colcon_pkg']
+[5.467s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/Makefile) by extension 'colcon_pkg'
+[5.467s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/Makefile) by extensions ['colcon_meta']
+[5.467s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/Makefile) by extension 'colcon_meta'
+[5.467s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/Makefile) by extensions ['ros']
+[5.467s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/Makefile) by extension 'ros'
+[5.467s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/Makefile) by extensions ['cmake', 'python']
+[5.467s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/Makefile) by extension 'cmake'
+[5.468s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/Makefile) by extension 'python'
+[5.468s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/docs) by extensions ['ignore', 'ignore_ament_install']
+[5.468s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/docs) by extension 'ignore'
+[5.468s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/docs) by extension 'ignore_ament_install'
+[5.468s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/docs) by extensions ['colcon_pkg']
+[5.468s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/docs) by extension 'colcon_pkg'
+[5.468s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/docs) by extensions ['colcon_meta']
+[5.468s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/docs) by extension 'colcon_meta'
+[5.468s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/docs) by extensions ['ros']
+[5.468s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/docs) by extension 'ros'
+[5.468s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/docs) by extensions ['cmake', 'python']
+[5.469s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/docs) by extension 'cmake'
+[5.469s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/docs) by extension 'python'
+[5.469s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/src) by extensions ['ignore', 'ignore_ament_install']
+[5.469s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/src) by extension 'ignore'
+[5.469s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/src) by extension 'ignore_ament_install'
+[5.469s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/src) by extensions ['colcon_pkg']
+[5.469s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/src) by extension 'colcon_pkg'
+[5.469s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/src) by extensions ['colcon_meta']
+[5.469s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/src) by extension 'colcon_meta'
+[5.469s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/src) by extensions ['ros']
+[5.469s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/src) by extension 'ros'
+[5.469s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/src) by extensions ['cmake', 'python']
+[5.470s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/src) by extension 'cmake'
+[5.470s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/src) by extension 'python'
+[5.470s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/tests) by extensions ['ignore', 'ignore_ament_install']
+[5.470s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/tests) by extension 'ignore'
+[5.470s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/tests) by extension 'ignore_ament_install'
+[5.470s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/tests) by extensions ['colcon_pkg']
+[5.470s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/tests) by extension 'colcon_pkg'
+[5.470s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/tests) by extensions ['colcon_meta']
+[5.470s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/tests) by extension 'colcon_meta'
+[5.470s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/tests) by extensions ['ros']
+[5.470s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/tests) by extension 'ros'
+[5.470s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/tests) by extensions ['cmake', 'python']
+[5.471s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/tests) by extension 'cmake'
+[5.471s] Level 1:colcon.colcon_core.package_identification:_identify(AutonomousRoboticApplication/tivac/tests) by extension 'python'
+[5.471s] Level 1:colcon.colcon_core.package_identification:_identify(Config) by extensions ['ignore', 'ignore_ament_install']
+[5.471s] Level 1:colcon.colcon_core.package_identification:_identify(Config) by extension 'ignore'
+[5.471s] Level 1:colcon.colcon_core.package_identification:_identify(Config) by extension 'ignore_ament_install'
+[5.471s] Level 1:colcon.colcon_core.package_identification:_identify(Config) by extensions ['colcon_pkg']
+[5.471s] Level 1:colcon.colcon_core.package_identification:_identify(Config) by extension 'colcon_pkg'
+[5.471s] Level 1:colcon.colcon_core.package_identification:_identify(Config) by extensions ['colcon_meta']
+[5.471s] Level 1:colcon.colcon_core.package_identification:_identify(Config) by extension 'colcon_meta'
+[5.471s] Level 1:colcon.colcon_core.package_identification:_identify(Config) by extensions ['ros']
+[5.471s] Level 1:colcon.colcon_core.package_identification:_identify(Config) by extension 'ros'
+[5.471s] Level 1:colcon.colcon_core.package_identification:_identify(Config) by extensions ['cmake', 'python']
+[5.471s] Level 1:colcon.colcon_core.package_identification:_identify(Config) by extension 'cmake'
+[5.472s] Level 1:colcon.colcon_core.package_identification:_identify(Config) by extension 'python'
+[5.472s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extensions ['ignore', 'ignore_ament_install']
+[5.472s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extension 'ignore'
+[5.472s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extension 'ignore_ament_install'
+[5.472s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extensions ['colcon_pkg']
+[5.472s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extension 'colcon_pkg'
+[5.472s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extensions ['colcon_meta']
+[5.472s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extension 'colcon_meta'
+[5.472s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extensions ['ros']
+[5.472s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extension 'ros'
+[5.472s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extensions ['cmake', 'python']
+[5.472s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extension 'cmake'
+[5.472s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extension 'python'
+[5.472s] Level 1:colcon.colcon_core.package_identification:_identify(Reports) by extensions ['ignore', 'ignore_ament_install']
+[5.473s] Level 1:colcon.colcon_core.package_identification:_identify(Reports) by extension 'ignore'
+[5.473s] Level 1:colcon.colcon_core.package_identification:_identify(Reports) by extension 'ignore_ament_install'
+[5.473s] Level 1:colcon.colcon_core.package_identification:_identify(Reports) by extensions ['colcon_pkg']
+[5.473s] Level 1:colcon.colcon_core.package_identification:_identify(Reports) by extension 'colcon_pkg'
+[5.473s] Level 1:colcon.colcon_core.package_identification:_identify(Reports) by extensions ['colcon_meta']
+[5.473s] Level 1:colcon.colcon_core.package_identification:_identify(Reports) by extension 'colcon_meta'
+[5.473s] Level 1:colcon.colcon_core.package_identification:_identify(Reports) by extensions ['ros']
+[5.473s] Level 1:colcon.colcon_core.package_identification:_identify(Reports) by extension 'ros'
+[5.473s] Level 1:colcon.colcon_core.package_identification:_identify(Reports) by extensions ['cmake', 'python']
+[5.473s] Level 1:colcon.colcon_core.package_identification:_identify(Reports) by extension 'cmake'
+[5.473s] Level 1:colcon.colcon_core.package_identification:_identify(Reports) by extension 'python'
+[5.473s] Level 1:colcon.colcon_core.package_identification:_identify(Tests) by extensions ['ignore', 'ignore_ament_install']
+[5.473s] Level 1:colcon.colcon_core.package_identification:_identify(Tests) by extension 'ignore'
+[5.474s] Level 1:colcon.colcon_core.package_identification:_identify(Tests) by extension 'ignore_ament_install'
+[5.474s] Level 1:colcon.colcon_core.package_identification:_identify(Tests) by extensions ['colcon_pkg']
+[5.474s] Level 1:colcon.colcon_core.package_identification:_identify(Tests) by extension 'colcon_pkg'
+[5.474s] Level 1:colcon.colcon_core.package_identification:_identify(Tests) by extensions ['colcon_meta']
+[5.474s] Level 1:colcon.colcon_core.package_identification:_identify(Tests) by extension 'colcon_meta'
+[5.474s] Level 1:colcon.colcon_core.package_identification:_identify(Tests) by extensions ['ros']
+[5.474s] Level 1:colcon.colcon_core.package_identification:_identify(Tests) by extension 'ros'
+[5.474s] Level 1:colcon.colcon_core.package_identification:_identify(Tests) by extensions ['cmake', 'python']
+[5.474s] Level 1:colcon.colcon_core.package_identification:_identify(Tests) by extension 'cmake'
+[5.474s] Level 1:colcon.colcon_core.package_identification:_identify(Tests) by extension 'python'
+[5.474s] Level 1:colcon.colcon_core.package_identification:_identify(Tools) by extensions ['ignore', 'ignore_ament_install']
+[5.474s] Level 1:colcon.colcon_core.package_identification:_identify(Tools) by extension 'ignore'
+[5.474s] Level 1:colcon.colcon_core.package_identification:_identify(Tools) by extension 'ignore_ament_install'
+[5.474s] Level 1:colcon.colcon_core.package_identification:_identify(Tools) by extensions ['colcon_pkg']
+[5.475s] Level 1:colcon.colcon_core.package_identification:_identify(Tools) by extension 'colcon_pkg'
+[5.475s] Level 1:colcon.colcon_core.package_identification:_identify(Tools) by extensions ['colcon_meta']
+[5.475s] Level 1:colcon.colcon_core.package_identification:_identify(Tools) by extension 'colcon_meta'
+[5.475s] Level 1:colcon.colcon_core.package_identification:_identify(Tools) by extensions ['ros']
+[5.475s] Level 1:colcon.colcon_core.package_identification:_identify(Tools) by extension 'ros'
+[5.475s] Level 1:colcon.colcon_core.package_identification:_identify(Tools) by extensions ['cmake', 'python']
+[5.475s] Level 1:colcon.colcon_core.package_identification:_identify(Tools) by extension 'cmake'
+[5.475s] Level 1:colcon.colcon_core.package_identification:_identify(Tools) by extension 'python'
+[5.475s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[5.475s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[5.475s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[5.476s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[5.476s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[5.476s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[5.476s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[5.476s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[5.476s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[5.476s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[5.476s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[5.476s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[5.476s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[5.476s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[5.673s] ERROR:colcon.colcon_core.extension_point:Exception loading extension 'colcon_core.package_augmentation.ros_ament_python': The 'typing-extensions>=3.6.4' distribution was not found and is required by importlib-metadata
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_core/extension_point.py", line 169, in load_extension_points
+    extension_type = load_extension_point(name, value, group)
+  File "/usr/lib/python3/dist-packages/colcon_core/extension_point.py", line 210, in load_extension_point
+    return EntryPoint(name, value, group).load()
+  File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 171, in load
+    module = import_module(match.group('module'))
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/usr/lib/python3/dist-packages/colcon_ros/package_augmentation/ros_ament_python.py", line 8, in <module>
+    from colcon_python_setup_py.package_identification.python_setup_py \
+  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 9, in <module>
+    import setuptools
+  File "/home/aliadel/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 17, in <module>
+    import setuptools.version
+  File "/home/aliadel/.local/lib/python3.10/site-packages/setuptools/version.py", line 1, in <module>
+    import pkg_resources
+  File "/home/aliadel/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 3261, in <module>
+    def _initialize_master_working_set():
+  File "/home/aliadel/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 3244, in _call_aside
+    f(*args, **kwargs)
+  File "/home/aliadel/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 3273, in _initialize_master_working_set
+    working_set = WorkingSet._build_master()
+  File "/home/aliadel/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 583, in _build_master
+    ws.require(__requires__)
+  File "/home/aliadel/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 900, in require
+    needed = self.resolve(parse_requirements(requirements))
+  File "/home/aliadel/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 786, in resolve
+    raise DistributionNotFound(req, requirers)
+pkg_resources.DistributionNotFound: The 'typing-extensions>=3.6.4' distribution was not found and is required by importlib-metadata
+
+[6.036s] ERROR:colcon.colcon_core.extension_point:Exception loading extension 'colcon_core.package_augmentation.python_setup_py': The 'typing-extensions>=3.6.4' distribution was not found and is required by importlib-metadata
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_core/extension_point.py", line 169, in load_extension_points
+    extension_type = load_extension_point(name, value, group)
+  File "/usr/lib/python3/dist-packages/colcon_core/extension_point.py", line 210, in load_extension_point
+    return EntryPoint(name, value, group).load()
+  File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 171, in load
+    module = import_module(match.group('module'))
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_augmentation/python_setup_py.py", line 9, in <module>
+    from colcon_python_setup_py.package_identification.python_setup_py import \
+  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 9, in <module>
+    import setuptools
+  File "/home/aliadel/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 17, in <module>
+    import setuptools.version
+  File "/home/aliadel/.local/lib/python3.10/site-packages/setuptools/version.py", line 1, in <module>
+    import pkg_resources
+  File "/home/aliadel/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 3261, in <module>
+    def _initialize_master_working_set():
+  File "/home/aliadel/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 3244, in _call_aside
+    f(*args, **kwargs)
+  File "/home/aliadel/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 3273, in _initialize_master_working_set
+    working_set = WorkingSet._build_master()
+  File "/home/aliadel/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 583, in _build_master
+    ws.require(__requires__)
+  File "/home/aliadel/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 900, in require
+    needed = self.resolve(parse_requirements(requirements))
+  File "/home/aliadel/.local/lib/python3.10/site-packages/pkg_resources/__init__.py", line 786, in resolve
+    raise DistributionNotFound(req, requirers)
+pkg_resources.DistributionNotFound: The 'typing-extensions>=3.6.4' distribution was not found and is required by importlib-metadata
+
+[6.039s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[6.039s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[6.057s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/install
+[6.058s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/aliadel/ros2_ws/install
+[6.061s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 358 installed packages in /opt/ros/humble
+[6.064s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[6.203s] Level 5:colcon.colcon_core.verb:set package 'cpp_pkg' build argument 'cmake_args' from command line to 'None'
+[6.203s] Level 5:colcon.colcon_core.verb:set package 'cpp_pkg' build argument 'cmake_target' from command line to 'None'
+[6.203s] Level 5:colcon.colcon_core.verb:set package 'cpp_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[6.203s] Level 5:colcon.colcon_core.verb:set package 'cpp_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[6.204s] Level 5:colcon.colcon_core.verb:set package 'cpp_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[6.204s] Level 5:colcon.colcon_core.verb:set package 'cpp_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[6.204s] Level 5:colcon.colcon_core.verb:set package 'cpp_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[6.204s] Level 5:colcon.colcon_core.verb:set package 'cpp_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[6.204s] Level 5:colcon.colcon_core.verb:set package 'cpp_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[6.204s] DEBUG:colcon.colcon_core.verb:Building package 'cpp_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg', 'merge_install': False, 'path': '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/src/cpp_pkg', 'symlink_install': False, 'test_result_base': None}
+[6.205s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'cmake_args' from command line to 'None'
+[6.205s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'cmake_target' from command line to 'None'
+[6.206s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[6.206s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[6.206s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[6.206s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[6.206s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[6.206s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[6.206s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[6.206s] DEBUG:colcon.colcon_core.verb:Building package 'py_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/aliadel/Documents/Autonomous-Robotic-System/build/py_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/aliadel/Documents/Autonomous-Robotic-System/install/py_pkg', 'merge_install': False, 'path': '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/src/py_pkg', 'symlink_install': False, 'test_result_base': None}
+[6.206s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[6.209s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[6.210s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/src/cpp_pkg' with build type 'ament_cmake'
+[6.210s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/src/cpp_pkg'
+[6.246s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[6.247s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.247s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.279s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/src/py_pkg' with build type 'ament_python'
+[6.279s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_pkg', 'ament_prefix_path')
+[6.280s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aliadel/Documents/Autonomous-Robotic-System/install/py_pkg/share/py_pkg/hook/ament_prefix_path.ps1'
+[6.301s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aliadel/Documents/Autonomous-Robotic-System/install/py_pkg/share/py_pkg/hook/ament_prefix_path.dsv'
+[6.303s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aliadel/Documents/Autonomous-Robotic-System/install/py_pkg/share/py_pkg/hook/ament_prefix_path.sh'
+[6.305s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.306s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.375s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/install/py_pkg:/home/aliadel/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg -- -j8 -l8
+[6.649s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'py_pkg' doesn't explicitly install a marker in the package index (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+[6.649s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'py_pkg' doesn't explicitly install the 'package.xml' file (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+[6.650s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/src/py_pkg'
+[6.651s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.651s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.130s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/install/py_pkg:/home/aliadel/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg -- -j8 -l8
+[7.200s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cpp_pkg)
+[7.300s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg' for CMake module files
+[7.301s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg' for CMake config files
+[7.301s] Level 1:colcon.colcon_core.shell:create_environment_hook('cpp_pkg', 'cmake_prefix_path')
+[7.302s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/share/cpp_pkg/hook/cmake_prefix_path.ps1'
+[7.303s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/share/cpp_pkg/hook/cmake_prefix_path.dsv'
+[7.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/share/cpp_pkg/hook/cmake_prefix_path.sh'
+[7.305s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/lib'
+[7.305s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/bin'
+[7.305s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/lib/pkgconfig/cpp_pkg.pc'
+[7.305s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/lib/python3.10/site-packages'
+[7.306s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/bin'
+[7.306s] INFO:colcon.colcon_core.shell:Creating package script '/home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/share/cpp_pkg/package.ps1'
+[7.318s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/share/cpp_pkg/package.dsv'
+[7.319s] INFO:colcon.colcon_core.shell:Creating package script '/home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/share/cpp_pkg/package.sh'
+[7.321s] INFO:colcon.colcon_core.shell:Creating package script '/home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/share/cpp_pkg/package.bash'
+[7.323s] INFO:colcon.colcon_core.shell:Creating package script '/home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/share/cpp_pkg/package.zsh'
+[7.342s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/share/colcon-core/packages/cpp_pkg)
+[7.460s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.460s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.460s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[7.461s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.506s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.506s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.507s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.630s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.630s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aliadel/Documents/Autonomous-Robotic-System/install/local_setup.ps1'
+[7.651s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/aliadel/Documents/Autonomous-Robotic-System/install/_local_setup_util_ps1.py'
+[7.690s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aliadel/Documents/Autonomous-Robotic-System/install/setup.ps1'
+[7.693s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aliadel/Documents/Autonomous-Robotic-System/install/local_setup.sh'
+[7.722s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/aliadel/Documents/Autonomous-Robotic-System/install/_local_setup_util_sh.py'
+[7.723s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aliadel/Documents/Autonomous-Robotic-System/install/setup.sh'
+[7.727s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aliadel/Documents/Autonomous-Robotic-System/install/local_setup.bash'
+[7.728s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aliadel/Documents/Autonomous-Robotic-System/install/setup.bash'
+[7.730s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aliadel/Documents/Autonomous-Robotic-System/install/local_setup.zsh'
+[7.742s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aliadel/Documents/Autonomous-Robotic-System/install/setup.zsh'

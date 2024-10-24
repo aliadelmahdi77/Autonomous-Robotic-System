@@ -4,11 +4,10 @@
   <name>py_pkg</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="aliadel@todo.todo">aliadel</maintainer>
+  <maintainer email="aliadelmahdi77@gmail.com">aliadel</maintainer>
   <license>TODO: License declaration</license>
 
   <depend>rclpy</depend>
-  <depend>example_interfaces</depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

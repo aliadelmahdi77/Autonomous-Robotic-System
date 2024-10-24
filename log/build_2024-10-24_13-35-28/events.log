@@ -1,0 +1,143 @@
+[0.000000] (-) TimerEvent: {}
+[0.000560] (cpp_pkg) JobQueued: {'identifier': 'cpp_pkg', 'dependencies': OrderedDict()}
+[0.000677] (py_pkg) JobQueued: {'identifier': 'py_pkg', 'dependencies': OrderedDict()}
+[0.000786] (cpp_pkg) JobStarted: {'identifier': 'cpp_pkg'}
+[0.010493] (py_pkg) JobStarted: {'identifier': 'py_pkg'}
+[0.025993] (cpp_pkg) JobProgress: {'identifier': 'cpp_pkg', 'progress': 'cmake'}
+[0.026674] (cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/src/cpp_pkg', '-DCMAKE_INSTALL_PREFIX=/home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg'], 'cwd': '/home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'aliadel'), ('LC_TIME', 'ar_EG.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/aliadel'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.93.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1035'), ('SYSTEMD_EXEC_PID', '1227'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '22699'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/install:/home/aliadel/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'aliadel'), ('JOURNAL_STREAM', '8:18352'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'aliadel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/aliadel/.local/bin:/opt/ros/humble/bin:/home/aliadel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/VM:@/tmp/.ICE-unix/1203,unix/VM:/tmp/.ICE-unix/1203'), ('INVOCATION_ID', 'c59ff02b3e85414fa6491e2f4c9e864a'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/aliadel/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/pythonrc.py'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BTV1V2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9a281aa1c5.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/install/py_pkg:/home/aliadel/ros2_ws/install/my_py_pkg:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_EG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/install/py_pkg/lib/python3.10/site-packages:/home/aliadel/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/install/cpp_pkg:/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/install/py_pkg:/home/aliadel/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[0.098708] (-) TimerEvent: {}
+[0.199259] (-) TimerEvent: {}
+[0.299714] (-) TimerEvent: {}
+[0.442490] (-) TimerEvent: {}
+[0.544179] (-) TimerEvent: {}
+[0.644735] (-) TimerEvent: {}
+[0.745248] (-) TimerEvent: {}
+[0.845763] (-) TimerEvent: {}
+[0.946262] (-) TimerEvent: {}
+[0.946935] (cpp_pkg) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.046443] (-) TimerEvent: {}
+[1.147183] (-) TimerEvent: {}
+[1.247953] (-) TimerEvent: {}
+[1.348588] (-) TimerEvent: {}
+[1.387473] (py_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../../../build/py_pkg', 'build', '--build-base', '/home/aliadel/Documents/Autonomous-Robotic-System/build/py_pkg/build', 'install', '--record', '/home/aliadel/Documents/Autonomous-Robotic-System/build/py_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/src/py_pkg', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:', 'USER': 'aliadel', 'LC_TIME': 'ar_EG.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/aliadel', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'TERM_PROGRAM_VERSION': '1.93.1', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'ar_EG.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '1035', 'SYSTEMD_EXEC_PID': '1227', 'IM_CONFIG_CHECK_ENV': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '22699', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/install:/home/aliadel/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'aliadel', 'JOURNAL_STREAM': '8:18352', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'aliadel', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/aliadel/.local/bin:/opt/ros/humble/bin:/home/aliadel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/VM:@/tmp/.ICE-unix/1203,unix/VM:/tmp/.ICE-unix/1203', 'INVOCATION_ID': 'c59ff02b3e85414fa6491e2f4c9e864a', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ar_EG.UTF-8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'PYTHONSTARTUP': '/home/aliadel/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/pythonrc.py', 'LC_TELEPHONE': 'ar_EG.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.BTV1V2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-9a281aa1c5.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/install/py_pkg:/home/aliadel/ros2_ws/install/my_py_pkg:/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'LC_NAME': 'ar_EG.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ar_EG.UTF-8', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ar_EG.UTF-8', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/aliadel/Documents/Autonomous-Robotic-System/build/py_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/aliadel/Documents/Autonomous-Robotic-System/build/py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aliadel/Documents/Autonomous-Robotic-System/install/py_pkg/lib/python3.10/site-packages:/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/install/py_pkg/lib/python3.10/site-packages:/home/aliadel/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ar_EG.UTF-8', 'LC_PAPER': 'ar_EG.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/install/cpp_pkg'}, 'shell': False}
+[1.448743] (-) TimerEvent: {}
+[1.549340] (-) TimerEvent: {}
+[1.649911] (-) TimerEvent: {}
+[1.700261] (py_pkg) StderrLine: {'line': b"/home/aliadel/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[1.700722] (py_pkg) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[1.750096] (-) TimerEvent: {}
+[1.850644] (-) TimerEvent: {}
+[1.856308] (py_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[1.881915] (py_pkg) StdoutLine: {'line': b'creating ../../../../../build/py_pkg/py_pkg.egg-info\n'}
+[1.882403] (py_pkg) StdoutLine: {'line': b'writing ../../../../../build/py_pkg/py_pkg.egg-info/PKG-INFO\n'}
+[1.882914] (py_pkg) StdoutLine: {'line': b'writing dependency_links to ../../../../../build/py_pkg/py_pkg.egg-info/dependency_links.txt\n'}
+[1.883171] (py_pkg) StdoutLine: {'line': b'writing entry points to ../../../../../build/py_pkg/py_pkg.egg-info/entry_points.txt\n'}
+[1.883550] (py_pkg) StdoutLine: {'line': b'writing requirements to ../../../../../build/py_pkg/py_pkg.egg-info/requires.txt\n'}
+[1.884066] (py_pkg) StdoutLine: {'line': b'writing top-level names to ../../../../../build/py_pkg/py_pkg.egg-info/top_level.txt\n'}
+[1.884187] (py_pkg) StdoutLine: {'line': b"writing manifest file '../../../../../build/py_pkg/py_pkg.egg-info/SOURCES.txt'\n"}
+[1.895580] (cpp_pkg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 7.5.0\n'}
+[1.932410] (py_pkg) StdoutLine: {'line': b"reading manifest file '../../../../../build/py_pkg/py_pkg.egg-info/SOURCES.txt'\n"}
+[1.932827] (py_pkg) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[1.933095] (py_pkg) StderrLine: {'line': b'  File "/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/src/py_pkg/setup.py", line 5, in <module>\n'}
+[1.933398] (py_pkg) StderrLine: {'line': b'    setup(\n'}
+[1.933596] (py_pkg) StderrLine: {'line': b'  File "/home/aliadel/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 117, in setup\n'}
+[1.933730] (py_pkg) StderrLine: {'line': b'    return distutils.core.setup(**attrs)\n'}
+[1.934253] (py_pkg) StderrLine: {'line': b'  File "/home/aliadel/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 183, in setup\n'}
+[1.934346] (py_pkg) StderrLine: {'line': b'    return run_commands(dist)\n'}
+[1.934471] (py_pkg) StderrLine: {'line': b'  File "/home/aliadel/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 199, in run_commands\n'}
+[1.934593] (py_pkg) StderrLine: {'line': b'    dist.run_commands()\n'}
+[1.934936] (py_pkg) StderrLine: {'line': b'  File "/home/aliadel/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 954, in run_commands\n'}
+[1.935246] (py_pkg) StderrLine: {'line': b'    self.run_command(cmd)\n'}
+[1.935378] (py_pkg) StderrLine: {'line': b'  File "/home/aliadel/.local/lib/python3.10/site-packages/setuptools/dist.py", line 991, in run_command\n'}
+[1.935491] (py_pkg) StderrLine: {'line': b'    super().run_command(command)\n'}
+[1.935599] (py_pkg) StderrLine: {'line': b'  File "/home/aliadel/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 973, in run_command\n'}
+[1.935723] (py_pkg) StderrLine: {'line': b'    cmd_obj.run()\n'}
+[1.935887] (py_pkg) StderrLine: {'line': b'  File "/home/aliadel/.local/lib/python3.10/site-packages/setuptools/command/egg_info.py", line 315, in run\n'}
+[1.936004] (py_pkg) StderrLine: {'line': b'    self.find_sources()\n'}
+[1.936114] (py_pkg) StderrLine: {'line': b'  File "/home/aliadel/.local/lib/python3.10/site-packages/setuptools/command/egg_info.py", line 323, in find_sources\n'}
+[1.936224] (py_pkg) StderrLine: {'line': b'    mm.run()\n'}
+[1.936331] (py_pkg) StderrLine: {'line': b'  File "/home/aliadel/.local/lib/python3.10/site-packages/setuptools/command/egg_info.py", line 549, in run\n'}
+[1.936436] (py_pkg) StderrLine: {'line': b'    self.prune_file_list()\n'}
+[1.936556] (py_pkg) StderrLine: {'line': b'  File "/home/aliadel/.local/lib/python3.10/site-packages/setuptools/command/sdist.py", line 161, in prune_file_list\n'}
+[1.936679] (py_pkg) StderrLine: {'line': b'    super().prune_file_list()\n'}
+[1.936901] (py_pkg) StderrLine: {'line': b'  File "/home/aliadel/.local/lib/python3.10/site-packages/setuptools/_distutils/command/sdist.py", line 380, in prune_file_list\n'}
+[1.937040] (py_pkg) StderrLine: {'line': b'    base_dir = self.distribution.get_fullname()\n'}
+[1.937178] (py_pkg) StderrLine: {'line': b'  File "/home/aliadel/.local/lib/python3.10/site-packages/setuptools/_core_metadata.py", line 267, in get_fullname\n'}
+[1.937294] (py_pkg) StderrLine: {'line': b'    return _distribution_fullname(self.get_name(), self.get_version())\n'}
+[1.937405] (py_pkg) StderrLine: {'line': b'  File "/home/aliadel/.local/lib/python3.10/site-packages/setuptools/_core_metadata.py", line 285, in _distribution_fullname\n'}
+[1.937519] (py_pkg) StderrLine: {'line': b'    canonicalize_version(version, strip_trailing_zero=False),\n'}
+[1.937634] (py_pkg) StderrLine: {'line': b"TypeError: canonicalize_version() got an unexpected keyword argument 'strip_trailing_zero'\n"}
+[1.950916] (-) TimerEvent: {}
+[1.967671] (cpp_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.004201] (py_pkg) CommandEnded: {'returncode': 1}
+[2.004863] (py_pkg) JobEnded: {'identifier': 'py_pkg', 'rc': 1}
+[2.051057] (-) TimerEvent: {}
+[2.151504] (-) TimerEvent: {}
+[2.252081] (-) TimerEvent: {}
+[2.254637] (cpp_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.265240] (cpp_pkg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.266983] (cpp_pkg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.288058] (cpp_pkg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.299042] (cpp_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.352284] (-) TimerEvent: {}
+[2.452763] (-) TimerEvent: {}
+[2.473889] (cpp_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.484301] (cpp_pkg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.484928] (cpp_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.485397] (cpp_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.551437] (cpp_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.552843] (-) TimerEvent: {}
+[2.653257] (-) TimerEvent: {}
+[2.753699] (-) TimerEvent: {}
+[2.854326] (-) TimerEvent: {}
+[2.954785] (-) TimerEvent: {}
+[3.055443] (-) TimerEvent: {}
+[3.156249] (-) TimerEvent: {}
+[3.210479] (cpp_pkg) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.256510] (-) TimerEvent: {}
+[3.357098] (-) TimerEvent: {}
+[3.457592] (-) TimerEvent: {}
+[3.498013] (cpp_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.557799] (-) TimerEvent: {}
+[3.658386] (-) TimerEvent: {}
+[3.739774] (cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.758583] (-) TimerEvent: {}
+[3.760885] (cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.835743] (cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.858885] (-) TimerEvent: {}
+[3.907419] (cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.958992] (-) TimerEvent: {}
+[3.983986] (cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.059198] (-) TimerEvent: {}
+[4.159745] (-) TimerEvent: {}
+[4.260312] (-) TimerEvent: {}
+[4.297597] (cpp_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.326502] (cpp_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.360508] (-) TimerEvent: {}
+[4.460983] (-) TimerEvent: {}
+[4.561540] (-) TimerEvent: {}
+[4.662197] (-) TimerEvent: {}
+[4.693793] (cpp_pkg) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.762463] (-) TimerEvent: {}
+[4.791407] (cpp_pkg) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[4.862607] (-) TimerEvent: {}
+[4.871660] (cpp_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.962824] (-) TimerEvent: {}
+[4.981439] (cpp_pkg) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[5.063037] (-) TimerEvent: {}
+[5.163503] (-) TimerEvent: {}
+[5.165218] (cpp_pkg) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[5.166405] (cpp_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.263657] (-) TimerEvent: {}
+[5.346453] (cpp_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[5.348307] (cpp_pkg) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[5.363817] (-) TimerEvent: {}
+[5.464415] (-) TimerEvent: {}
+[5.565123] (-) TimerEvent: {}
+[5.665698] (-) TimerEvent: {}
+[5.755488] (cpp_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.765876] (-) TimerEvent: {}
+[5.771392] (cpp_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[5.775504] (cpp_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg\n'}
+[5.796669] (cpp_pkg) JobEnded: {'identifier': 'cpp_pkg', 'rc': 'SIGINT'}
+[5.808041] (-) EventReactorShutdown: {}

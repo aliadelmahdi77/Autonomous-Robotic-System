@@ -1,0 +1,4 @@
+[0.034s] Invoking command in '/home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/install/py_pkg:/home/aliadel/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg -- -j8 -l8
+[0.147s] [ 50%] [32mBuilding CXX object CMakeFiles/cpp_node.dir/src/LiDAR.cpp.o[0m
+[5.608s] [100%] [32m[1mLinking CXX executable cpp_node[0m
+[5.806s] [100%] Built target cpp_node

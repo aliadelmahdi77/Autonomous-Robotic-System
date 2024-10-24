@@ -1,4 +1,4 @@
-# Install script for directory: /home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/src/ros2_ws/src/cpp_pkg
+# Install script for directory: /home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/src/cpp_pkg
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -118,7 +118,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_pkg" TYPE FILE FILES "/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/src/ros2_ws/src/cpp_pkg/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_pkg" TYPE FILE FILES "/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/src/cpp_pkg/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

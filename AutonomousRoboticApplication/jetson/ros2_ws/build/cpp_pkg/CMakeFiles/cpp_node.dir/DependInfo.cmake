@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/src/cpp_pkg/src/LiDAR.cpp" "CMakeFiles/cpp_node.dir/src/LiDAR.cpp.o" "gcc" "CMakeFiles/cpp_node.dir/src/LiDAR.cpp.o.d"
+  "/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/src/cpp_pkg/src/LiDAR.cpp" "CMakeFiles/cpp_node.dir/src/LiDAR.cpp.o" "gcc" "CMakeFiles/cpp_node.dir/src/LiDAR.cpp.o.d"
   )
 
 # Targets to which this target links.

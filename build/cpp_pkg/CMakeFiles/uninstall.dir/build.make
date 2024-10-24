@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/src/ros2_ws/src/cpp_pkg
+CMAKE_SOURCE_DIR = /home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/src/cpp_pkg
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/src/ros2_ws/src/cpp_pkg /home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/src/ros2_ws/src/cpp_pkg /home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg /home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg /home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/src/cpp_pkg /home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/jetson/ros2_ws/src/cpp_pkg /home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg /home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg /home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 
