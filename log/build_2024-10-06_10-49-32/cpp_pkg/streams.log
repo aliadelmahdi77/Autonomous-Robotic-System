@@ -1,0 +1,26 @@
+[0.033s] Invoking command in '/home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/src/ros2_ws/install/py_pkg:/home/aliadel/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg -- -j2 -l2
+[0.263s] [35m[1mConsolidate compiler generated dependencies of target cpp_node[0m
+[0.333s] [ 50%] [32mBuilding CXX object CMakeFiles/cpp_node.dir/src/LiDAR.cpp.o[0m
+[6.085s] [100%] [32m[1mLinking CXX executable cpp_node[0m
+[6.289s] [100%] Built target cpp_node
+[6.325s] Invoked command in '/home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/src/ros2_ws/install/py_pkg:/home/aliadel/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg -- -j2 -l2
+[6.417s] Invoking command in '/home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/src/ros2_ws/install/py_pkg:/home/aliadel/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg
+[6.431s] -- Install configuration: ""
+[6.433s] -- Installing: /home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/lib/cpp_pkg/cpp_node
+[6.433s] -- Set runtime path of "/home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/lib/cpp_pkg/cpp_node" to ""
+[6.434s] -- Up-to-date: /home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/share/ament_index/resource_index/package_run_dependencies/cpp_pkg
+[6.435s] -- Up-to-date: /home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/share/ament_index/resource_index/parent_prefix_path/cpp_pkg
+[6.435s] -- Up-to-date: /home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/share/cpp_pkg/environment/ament_prefix_path.sh
+[6.435s] -- Up-to-date: /home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/share/cpp_pkg/environment/ament_prefix_path.dsv
+[6.438s] -- Up-to-date: /home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/share/cpp_pkg/environment/path.sh
+[6.438s] -- Up-to-date: /home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/share/cpp_pkg/environment/path.dsv
+[6.438s] -- Up-to-date: /home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/share/cpp_pkg/local_setup.bash
+[6.438s] -- Up-to-date: /home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/share/cpp_pkg/local_setup.sh
+[6.438s] -- Up-to-date: /home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/share/cpp_pkg/local_setup.zsh
+[6.438s] -- Up-to-date: /home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/share/cpp_pkg/local_setup.dsv
+[6.438s] -- Installing: /home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/share/cpp_pkg/package.dsv
+[6.438s] -- Up-to-date: /home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/share/ament_index/resource_index/packages/cpp_pkg
+[6.441s] -- Up-to-date: /home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/share/cpp_pkg/cmake/cpp_pkgConfig.cmake
+[6.442s] -- Up-to-date: /home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/share/cpp_pkg/cmake/cpp_pkgConfig-version.cmake
+[6.442s] -- Up-to-date: /home/aliadel/Documents/Autonomous-Robotic-System/install/cpp_pkg/share/cpp_pkg/package.xml
+[6.447s] Invoked command in '/home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/src/ros2_ws/install/py_pkg:/home/aliadel/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/aliadel/Documents/Autonomous-Robotic-System/build/cpp_pkg

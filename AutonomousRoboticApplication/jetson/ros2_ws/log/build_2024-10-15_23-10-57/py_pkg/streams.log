@@ -1,0 +1,22 @@
+[1.232s] Invoking command in '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/src/py_pkg': PYTHONPATH=/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/build/py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/py_pkg build --build-base /home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/build/py_pkg/build install --record /home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/build/py_pkg/install.log --single-version-externally-managed install_data
+[1.661s] running egg_info
+[1.663s] writing ../../build/py_pkg/py_pkg.egg-info/PKG-INFO
+[1.664s] writing dependency_links to ../../build/py_pkg/py_pkg.egg-info/dependency_links.txt
+[1.665s] writing entry points to ../../build/py_pkg/py_pkg.egg-info/entry_points.txt
+[1.666s] writing requirements to ../../build/py_pkg/py_pkg.egg-info/requires.txt
+[1.666s] writing top-level names to ../../build/py_pkg/py_pkg.egg-info/top_level.txt
+[1.670s] reading manifest file '../../build/py_pkg/py_pkg.egg-info/SOURCES.txt'
+[1.673s] writing manifest file '../../build/py_pkg/py_pkg.egg-info/SOURCES.txt'
+[1.674s] running build
+[1.674s] running build_py
+[1.674s] running install
+[1.675s] running install_lib
+[1.677s] running install_data
+[1.678s] running install_egg_info
+[1.680s] removing '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg/lib/python3.10/site-packages/py_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[1.681s] Copying ../../build/py_pkg/py_pkg.egg-info to /home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg/lib/python3.10/site-packages/py_pkg-0.0.0-py3.10.egg-info
+[1.683s] running install_scripts
+[1.711s] Installing py_LiDAR script to /home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg/lib/py_pkg
+[1.711s] Installing py_station script to /home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg/lib/py_pkg
+[1.712s] writing list of installed files to '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/build/py_pkg/install.log'
+[1.766s] Invoked command in '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/src/py_pkg' returned '0': PYTHONPATH=/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/build/py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/py_pkg build --build-base /home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/build/py_pkg/build install --record /home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/build/py_pkg/install.log --single-version-externally-managed install_data

@@ -1,0 +1,201 @@
+[0.211s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.211s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x79e15a5324d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x79e15a531f00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x79e15a531f00>>, mixin_verb=('build',))
+[0.548s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.548s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.548s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.548s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.548s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.548s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.548s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pkg) by extension 'ignore'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pkg) by extension 'ignore_ament_install'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pkg) by extensions ['colcon_pkg']
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pkg) by extension 'colcon_pkg'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pkg) by extensions ['colcon_meta']
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pkg) by extension 'colcon_meta'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pkg) by extensions ['ros']
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_pkg) by extension 'ros'
+[0.570s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cpp_pkg' with type 'ros.ament_cmake' and name 'cpp_pkg'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pkg) by extension 'ignore'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pkg) by extension 'ignore_ament_install'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pkg) by extensions ['colcon_pkg']
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pkg) by extension 'colcon_pkg'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pkg) by extensions ['colcon_meta']
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pkg) by extension 'colcon_meta'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pkg) by extensions ['ros']
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pkg) by extension 'ros'
+[0.571s] DEBUG:colcon.colcon_core.package_identification:Package 'src/py_pkg' with type 'ros.ament_python' and name 'py_pkg'
+[0.572s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.572s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.572s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.572s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.572s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.610s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.610s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.612s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install
+[0.613s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/aliadel/ros2_ws/install
+[0.616s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 361 installed packages in /opt/ros/humble
+[0.618s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.674s] Level 5:colcon.colcon_core.verb:set package 'cpp_pkg' build argument 'cmake_args' from command line to 'None'
+[0.675s] Level 5:colcon.colcon_core.verb:set package 'cpp_pkg' build argument 'cmake_target' from command line to 'None'
+[0.675s] Level 5:colcon.colcon_core.verb:set package 'cpp_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.675s] Level 5:colcon.colcon_core.verb:set package 'cpp_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.675s] Level 5:colcon.colcon_core.verb:set package 'cpp_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.675s] Level 5:colcon.colcon_core.verb:set package 'cpp_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.675s] Level 5:colcon.colcon_core.verb:set package 'cpp_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.675s] Level 5:colcon.colcon_core.verb:set package 'cpp_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.675s] Level 5:colcon.colcon_core.verb:set package 'cpp_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.675s] DEBUG:colcon.colcon_core.verb:Building package 'cpp_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/build/cpp_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg', 'merge_install': False, 'path': '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/src/cpp_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.675s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'cmake_args' from command line to 'None'
+[0.675s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'cmake_target' from command line to 'None'
+[0.676s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.676s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.676s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.676s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.676s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.676s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.676s] Level 5:colcon.colcon_core.verb:set package 'py_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.676s] DEBUG:colcon.colcon_core.verb:Building package 'py_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/build/py_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg', 'merge_install': False, 'path': '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/src/py_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.676s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.678s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.678s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/src/cpp_pkg' with build type 'ament_cmake'
+[0.679s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/src/cpp_pkg'
+[0.682s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.682s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.682s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.688s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/src/py_pkg' with build type 'ament_python'
+[0.688s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_pkg', 'ament_prefix_path')
+[0.689s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg/share/py_pkg/hook/ament_prefix_path.ps1'
+[0.690s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg/share/py_pkg/hook/ament_prefix_path.dsv'
+[0.691s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg/share/py_pkg/hook/ament_prefix_path.sh'
+[0.692s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.692s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.713s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/build/cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg:/home/aliadel/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/build/cpp_pkg -- -j8 -l8
+[1.145s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/src/py_pkg'
+[1.146s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.146s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.154s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/build/cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg:/home/aliadel/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/build/cpp_pkg -- -j8 -l8
+[1.250s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/build/cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg:/home/aliadel/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/build/cpp_pkg
+[1.299s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cpp_pkg)
+[1.301s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/build/cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg:/home/aliadel/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/build/cpp_pkg
+[1.305s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg' for CMake module files
+[1.307s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg' for CMake config files
+[1.308s] Level 1:colcon.colcon_core.shell:create_environment_hook('cpp_pkg', 'cmake_prefix_path')
+[1.308s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/share/cpp_pkg/hook/cmake_prefix_path.ps1'
+[1.310s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/share/cpp_pkg/hook/cmake_prefix_path.dsv'
+[1.310s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/share/cpp_pkg/hook/cmake_prefix_path.sh'
+[1.312s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/lib'
+[1.312s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/bin'
+[1.312s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/lib/pkgconfig/cpp_pkg.pc'
+[1.313s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/lib/python3.10/site-packages'
+[1.313s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/bin'
+[1.314s] INFO:colcon.colcon_core.shell:Creating package script '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/share/cpp_pkg/package.ps1'
+[1.316s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/share/cpp_pkg/package.dsv'
+[1.317s] INFO:colcon.colcon_core.shell:Creating package script '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/share/cpp_pkg/package.sh'
+[1.319s] INFO:colcon.colcon_core.shell:Creating package script '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/share/cpp_pkg/package.bash'
+[1.321s] INFO:colcon.colcon_core.shell:Creating package script '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/share/cpp_pkg/package.zsh'
+[1.323s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/share/colcon-core/packages/cpp_pkg)
+[1.398s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cpp_pkg)
+[1.399s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg' for CMake module files
+[1.400s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg' for CMake config files
+[1.400s] Level 1:colcon.colcon_core.shell:create_environment_hook('cpp_pkg', 'cmake_prefix_path')
+[1.400s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/share/cpp_pkg/hook/cmake_prefix_path.ps1'
+[1.401s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/share/cpp_pkg/hook/cmake_prefix_path.dsv'
+[1.402s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/share/cpp_pkg/hook/cmake_prefix_path.sh'
+[1.403s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/lib'
+[1.403s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/bin'
+[1.403s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/lib/pkgconfig/cpp_pkg.pc'
+[1.404s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/lib/python3.10/site-packages'
+[1.404s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/bin'
+[1.404s] INFO:colcon.colcon_core.shell:Creating package script '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/share/cpp_pkg/package.ps1'
+[1.405s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/share/cpp_pkg/package.dsv'
+[1.406s] INFO:colcon.colcon_core.shell:Creating package script '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/share/cpp_pkg/package.sh'
+[1.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/share/cpp_pkg/package.bash'
+[1.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/share/cpp_pkg/package.zsh'
+[1.410s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/cpp_pkg/share/colcon-core/packages/cpp_pkg)
+[1.772s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/src/py_pkg': PYTHONPATH=/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/build/py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/py_pkg build --build-base /home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/build/py_pkg/build install --record /home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/build/py_pkg/install.log --single-version-externally-managed install_data
+[2.271s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg' for CMake module files
+[2.272s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/src/py_pkg' returned '0': PYTHONPATH=/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/build/py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/py_pkg build --build-base /home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/build/py_pkg/build install --record /home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/build/py_pkg/install.log --single-version-externally-managed install_data
+[2.273s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg' for CMake config files
+[2.274s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg/lib'
+[2.274s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg/bin'
+[2.274s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg/lib/pkgconfig/py_pkg.pc'
+[2.274s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg/lib/python3.10/site-packages'
+[2.274s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_pkg', 'pythonpath')
+[2.274s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg/share/py_pkg/hook/pythonpath.ps1'
+[2.275s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg/share/py_pkg/hook/pythonpath.dsv'
+[2.276s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg/share/py_pkg/hook/pythonpath.sh'
+[2.277s] Level 1:colcon.colcon_core.environment:checking '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg/bin'
+[2.277s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(py_pkg)
+[2.277s] INFO:colcon.colcon_core.shell:Creating package script '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg/share/py_pkg/package.ps1'
+[2.278s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg/share/py_pkg/package.dsv'
+[2.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg/share/py_pkg/package.sh'
+[2.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg/share/py_pkg/package.bash'
+[2.280s] INFO:colcon.colcon_core.shell:Creating package script '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg/share/py_pkg/package.zsh'
+[2.281s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/py_pkg/share/colcon-core/packages/py_pkg)
+[2.281s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.282s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.282s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.282s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.290s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.290s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.290s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.305s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.305s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/local_setup.ps1'
+[2.307s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/_local_setup_util_ps1.py'
+[2.309s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/setup.ps1'
+[2.311s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/local_setup.sh'
+[2.313s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/_local_setup_util_sh.py'
+[2.314s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/setup.sh'
+[2.319s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/local_setup.bash'
+[2.320s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/setup.bash'
+[2.323s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/local_setup.zsh'
+[2.323s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/install/setup.zsh'

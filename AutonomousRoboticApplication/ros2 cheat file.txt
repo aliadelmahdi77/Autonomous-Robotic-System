@@ -1,0 +1,19 @@
+clear
+colcon build --packages-select cpp_pkg
+ros2 run cpp_pkg cpp_node
+ 
+ros2 node list
+ros2 node -h
+ros2 node info cpp_node
+
+ros2 run cpp_pkg cpp_node --ros-args --remap __node:=node_name #run the same node with different name 
+
+colcon build --packages-select py_pkg --symlink install 
+ros2 run py_pkg py_station
+
+rqt
+rqt_graph
+
+ros2 run turtlesim turtlesim_node
+ros2 run turtlesim turtlesim_node --ros-args --remap __node:=turtle_new
+ros2 run turtlesim turtle_teleop_key --ros-args --remap __node:=key_node

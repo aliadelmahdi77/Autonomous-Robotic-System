@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/aliadel/Documents/Autonomous-Robotic-System/AutonomousRoboticApplication/raspberry_pi/ros2_ws/build/cpp_pkg/cpp_node" "TARGETS" "cpp_node" "DESTINATION" "lib/cpp_pkg")
