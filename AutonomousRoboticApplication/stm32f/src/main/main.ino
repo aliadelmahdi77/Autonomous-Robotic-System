@@ -1,5 +1,5 @@
 #include <Wire.h>
-
+//I2C pins: PB6 -> SCL, PB7 -> SDA
 void setup()
 {
   Wire.begin(2);

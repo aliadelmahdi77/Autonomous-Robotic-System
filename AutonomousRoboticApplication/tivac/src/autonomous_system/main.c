@@ -5,7 +5,7 @@ int main(void) {
     LED_Init();
     printInit();
 
-//    uint8_t receivedData;      // Byte received from master
+//    uint8_t receivedData;      // Byte received from slave
     uint8_t buffer[SIZE_OF_BUFFER];  // Buffer to hold the received data
 
     I2C0_MasterInit();
